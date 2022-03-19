@@ -95,7 +95,7 @@ function dragula (initialContainers, options) {
     _moveX = e.clientX;
     _moveY = e.clientY;
 
-    var ignore = whichMouseButton(e) !== 1 || e.metaKey || e.ctrlKey;
+    var ignore = whichMouseButton(e) !== 1;
     if (ignore) {
       return; // we only care about honest-to-god left clicks and touch events
     }
